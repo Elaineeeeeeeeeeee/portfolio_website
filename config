@@ -1,0 +1,35 @@
+Host ec2-ai-recognition
+    HostName 107.20.33.216
+    User ubuntu
+    IdentityFile ~/.ssh/AI.pem
+
+Host ec2
+    HostName 52.55.206.107
+    User ubuntu
+    IdentityFile ~/.ssh/AI1.pem
+
+Host ec2-ai-recognition-2
+    HostName 10.52.165.211
+    User root
+    Port 6322
+    PubkeyAuthentication no
+    PasswordAuthentication yes
+
+Host ec2-elaine
+    HostName 18.209.175.218
+    User ubuntu
+    IdentityFile ~/.ssh/AI.pem
+
+Host workstation-elaine
+    HostName 10.10.0.80
+    User elaine
+
+Host load-test-server
+    HostName 10.40.141.140
+    User root
+    Port 6322
+
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_personal
